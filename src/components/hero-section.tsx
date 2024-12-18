@@ -14,12 +14,12 @@ export function HeroSection() {
   return (
     <section className="relative h-[500px] mb-12 overflow-hidden rounded-lg ">
       <Image
-        src="/hero-bg.jpg"
+        src="/hero-bg.webp"
         alt="Header image"
-        width={1300}
-        height={500}
+        width={1920}
+        height={1080}
+        quality={90}
         className="object-cover mx-auto px-auto"
-        priority
       />
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-6">
         <h1
