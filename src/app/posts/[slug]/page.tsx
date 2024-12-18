@@ -3,7 +3,6 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import RichText from "@/lib/richText";
 import { Document as RichTextDocument } from "@contentful/rich-text-types";
-import { Card, CardContent } from "@/components/ui/card";
 
 const client = createClient({
   space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID || "",
@@ -56,9 +55,10 @@ async function getPost(slug: string): Promise<Post | null> {
 export default async function BlogPost({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const post = await getPost(params.slug);
+  const { slug } = await params;
+  const post = await getPost(slug);
 
   if (!post) {
     notFound();
