@@ -11,7 +11,7 @@ export function Footer() {
           </p>
           <div className="flex space-x-4">
             <Link
-              href="https://github.com/Hrmn-07"
+              href="https://github.com/Hrmn-07/travel-blog"
               target="_blank"
               className="text-gray-700 hover:text-blue-500 hover:scale-110 transition-all"
             >
