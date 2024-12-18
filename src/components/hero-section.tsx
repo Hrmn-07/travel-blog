@@ -14,7 +14,7 @@ export function HeroSection() {
   return (
     <section className="relative h-[500px] mb-12 overflow-hidden rounded-lg ">
       <Image
-        src="/hero-img.webp"
+        src="/hero-bg.jpg"
         alt="Header image"
         width={1300}
         height={500}
