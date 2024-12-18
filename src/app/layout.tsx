@@ -2,12 +2,20 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { Viewport } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Herman's Travel Blog",
   description: "A travel blog built with Next.js and Contentful",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
+  initialScale: 1,
+  width: "device-width",
+  maximumScale: 1,
 };
 
 export default function RootLayout({

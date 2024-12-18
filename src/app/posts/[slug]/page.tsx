@@ -78,7 +78,7 @@ export default async function BlogPost({
           className="w-auto h-auto mb-6 rounded-lg place-self-center"
         />
       )}
-      <div className="p-6 bg-white rounded-xl bg-opacity-70">
+      <div className="p-6 bg-white rounded-xl bg-opacity-70 text-justify text-xl">
         <RichText document={post.fields.body} />
       </div>
     </article>
