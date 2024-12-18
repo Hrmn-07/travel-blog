@@ -12,10 +12,7 @@ export const metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#000000",
-  initialScale: 1,
   width: "device-width",
-  maximumScale: 1,
 };
 
 export default function RootLayout({
@@ -28,7 +25,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div
           style={{
-            backgroundImage: "url('/web-background.jpg')",
+            backgroundImage: "url('/web-background.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "fixed",
